@@ -19,3 +19,13 @@ but excluding (bookmarking) node_modules
 ```bash
 docker run -p 3000:3000 -v /app/node_modules -v ${pwd}:/app  <image-id>
 ```
+
+### Docker Run Tests
+
+```bash
+docker run -it <image-id> npm run test
+```
+
+```bash
+docker exec -it <container-id> npm run test 
+```
