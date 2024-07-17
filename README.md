@@ -13,7 +13,7 @@ docker build -f Dockerfile.dev .
 docker run -p 3000:3000 <image-id>
 ```
 
-### Docker Volume
+### Docker Volume Without Compose
 Directly pick up file changes on react files, by using current working dir as volume,
 but excluding (bookmarking) node_modules
 ```bash
